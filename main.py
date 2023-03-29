@@ -1,9 +1,10 @@
-# Task 1: Happy Numbers
-# A happy number is a number defined by the following process: starting with any 
-# positive integer, replace the number by the sum of the squares of its digits, and 
-# repeat the process until the number equals 1. An example of a happy number is 19
-# (For more info: https://en.wikipedia.org/wiki/Happy_number)
-# Write a method that determines if a number is happy or sad
+# # Task 1: Happy Numbers
+# # A happy number is a number defined by the following process: starting with any 
+# # positive integer, replace the number by the sum of the squares of its digits, and 
+# # repeat the process until the number equals 1. An example of a happy number is 19
+# # (For more info: https://en.wikipedia.org/wiki/Happy_number)
+# # Write a method that determines if a number is happy or sad
+
 def happy_numbers():
     
     hold_num_index = 0
@@ -41,3 +42,25 @@ def happy_numbers():
             
 happy_numbers()
 
+# Task 2: Prime Numbers
+# A prime number is a number that is only divisible by one and itself.
+# Write a method that prints out all prime numbers between 1 and 100 
+
+def is_prime():
+    sum_of_divides = 0
+    prime = 'True'
+
+    for num in range(2,101):
+        for divisor in range(2, num-1):
+            is_divisible = num % divisor
+            
+            if is_divisible == 0:
+                prime = "False"
+        
+        if prime == "True":
+            print(num)
+        prime = "True"
+    
+
+is_prime()
+   
