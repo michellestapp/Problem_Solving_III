@@ -87,7 +87,7 @@ def fibonacci_from_user():
     fib_num_alt = []
 
     user_number = int(input(" Enter a number to start the Fibonacci Sequence: "))
- #   user_number = int(number)
+
     for index in range(0,50):
         if index == 0 or index == 1:
             fib_num_alt.append(user_number)
